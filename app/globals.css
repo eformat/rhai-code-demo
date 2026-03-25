@@ -412,6 +412,7 @@ a:hover { color: rgba(160, 0, 52, 0.8); }
   .post-cover--small {
     align-items: flex-start;
     justify-content: flex-start;
+    height: auto;
     min-height: 50vw;
     padding: 29.667vw 3.167vw 3.167vw;
   }
@@ -473,6 +474,7 @@ a:hover { color: rgba(160, 0, 52, 0.8); }
   }
 
   .post-cover--small {
+    height: auto;
     min-height: 40.42vw;
     padding: 23.917vw 5.067vw 3vw;
   }
