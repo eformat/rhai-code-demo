@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   output: "export",
   basePath: basePath || undefined,
   images: { unoptimized: true },
+  devIndicators: false,
 };
 
 export default nextConfig;

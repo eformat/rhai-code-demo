@@ -115,7 +115,7 @@ export default function DemosPage() {
     <>
       {/* Navigation */}
       <nav className="navigation navigation--blog">
-        <a className="navigation__logo" href="https://www.redhat.com">
+        <a className="navigation__logo" href="https://www.redhat.com" target="_blank" rel="noopener noreferrer">
           Red Hat
         </a>
         <div className="navigation__buttons">
@@ -126,6 +126,8 @@ export default function DemosPage() {
         <a
           className="navigation__button navigation__button--contact-us"
           href="https://www.redhat.com/en/technologies/cloud-computing/openshift/openshift-ai"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <span className="navigation__icon navigation__icon--talk-to-us navigation__icon--desktop">
             <TalkToUsIcon />
