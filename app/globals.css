@@ -183,8 +183,9 @@ a:hover { color: rgba(160, 0, 52, 0.8); }
   align-self: stretch;
   display: inline-flex;
   align-items: center;
+  margin-right: -3.3333333333333335vw;
   padding-left: 1.3333333333333333vw;
-  padding-right: 1.75vw;
+  padding-right: 3.3333333333333335vw;
   font-size: 1.6666666666666667vw;
   background-color: #CC0000;
   color: #fff;
