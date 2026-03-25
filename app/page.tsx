@@ -50,6 +50,17 @@ const demos: Demo[] = [
     dateColor: "#ffee88",
     href: "https://red.ht/prisoner",
   },
+  {
+    id: "factory-floor",
+    title: "Factory Floor Tycoon:",
+    subtitle: "agentic AI strategy game — build, automate & dominate",
+    shortUrl: "red.ht/factory-floor",
+    image: "/images/factory-floor-hero.svg",
+    bgColor: "#0d0d1a",
+    titleColor: "#FF6600",
+    dateColor: "#FF8833",
+    href: "https://red.ht/factory-floor",
+  },
 ];
 
 function TalkToUsIcon() {
