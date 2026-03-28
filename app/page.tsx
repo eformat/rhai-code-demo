@@ -61,6 +61,17 @@ const demos: Demo[] = [
     dateColor: "#FF8833",
     href: "https://red.ht/factory-floor",
   },
+  {
+    id: "speed-showdown",
+    title: "Speed Showdown:",
+    subtitle: "vLLM performance racing for optimized deployments",
+    shortUrl: "red.ht/speed-showdown",
+    image: "/images/speed-showdown-hero.svg",
+    bgColor: "#0a0a1a",
+    titleColor: "#00FFFF",
+    dateColor: "#00cccc",
+    href: "https://red.ht/speed-showdown",
+  },
 ];
 
 function TalkToUsIcon() {

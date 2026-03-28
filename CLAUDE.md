@@ -9,3 +9,5 @@ red.ht/lemons - a Guardrails demo https://github.com/eformat/lemonade-stand-assi
 red.ht/prisoner - Agentic prisoner's dilemma demo https://github.com/eformat/agentic-prisoners-dilemma
 
 red.ht/factory-floor - Agentic factory tycoon strategy game demo https://github.com/soyr-redhat/factory-floor-tycoon-agentic-demo
+
+red.ht/speed-showdown - vLLM Speed performance racing for optimized deployments
