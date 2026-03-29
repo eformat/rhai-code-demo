@@ -11,3 +11,5 @@ red.ht/prisoner - Agentic prisoner's dilemma demo https://github.com/eformat/age
 red.ht/factory-floor - Agentic factory tycoon strategy game demo https://github.com/soyr-redhat/factory-floor-tycoon-agentic-demo
 
 red.ht/speed-showdown - vLLM Speed performance racing for optimized deployments
+
+red.ht/dev-red-rag - an always up-to-date RAG for developers.redhat.com

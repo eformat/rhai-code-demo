@@ -72,6 +72,17 @@ const demos: Demo[] = [
     dateColor: "#00cccc",
     href: "https://red.ht/speed-showdown",
   },
+  {
+    id: "dev-red-rag",
+    title: "Developer RAG:",
+    subtitle: "always up-to-date RAG developers.redhat.com",
+    shortUrl: "red.ht/dev-red-rag",
+    image: "/images/dev-red-rag-hero.svg",
+    bgColor: "#0a0a1a",
+    titleColor: "#FF4444",
+    dateColor: "#FF8C00",
+    href: "https://red.ht/dev-red-rag",
+  },
 ];
 
 function TalkToUsIcon() {
