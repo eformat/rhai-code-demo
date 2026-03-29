@@ -13,3 +13,5 @@ red.ht/factory-floor - Agentic factory tycoon strategy game demo https://github.
 red.ht/speed-showdown - vLLM Speed performance racing for optimized deployments
 
 red.ht/dev-red-rag - an always up-to-date RAG for developers.redhat.com
+
+red.ht/mm-chat - MultiModal chatbot to easily compare side by side models

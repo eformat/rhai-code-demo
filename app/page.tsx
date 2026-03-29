@@ -83,6 +83,17 @@ const demos: Demo[] = [
     dateColor: "#FF8C00",
     href: "https://red.ht/dev-red-rag",
   },
+  {
+    id: "mm-chat",
+    title: "MultiModal Chat:",
+    subtitle: "side-by-side AI model comparison chatbot",
+    shortUrl: "red.ht/mm-chat",
+    image: "/images/mm-chat-hero.svg",
+    bgColor: "#0a0a1e",
+    titleColor: "#E040FB",
+    dateColor: "#00E5FF",
+    href: "https://red.ht/mm-chat",
+  },
 ];
 
 function TalkToUsIcon() {
