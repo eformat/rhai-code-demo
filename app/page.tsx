@@ -94,6 +94,17 @@ const demos: Demo[] = [
     dateColor: "#00E5FF",
     href: "https://red.ht/mm-chat",
   },
+  {
+    id: "black-jack",
+    title: "AI Blackjack:",
+    subtitle: "become the poker king with AI assisted Blackjack",
+    shortUrl: "red.ht/black-jack",
+    image: "/images/black-jack-hero.svg",
+    bgColor: "#0a2e14",
+    titleColor: "#FFD700",
+    dateColor: "#00ffaa",
+    href: "https://red.ht/black-jack",
+  },
 ];
 
 function TalkToUsIcon() {

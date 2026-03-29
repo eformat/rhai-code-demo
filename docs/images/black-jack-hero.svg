@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <radialGradient id="felt" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a5c2a"/>
+      <stop offset="100%" stop-color="#0a2e14"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="goldGlow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="cardFace" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <linearGradient id="chipGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#DAA520"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <linearGradient id="chipRed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EE0000"/>
+      <stop offset="50%" stop-color="#AA0000"/>
+      <stop offset="100%" stop-color="#EE0000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background felt -->
+  <rect width="800" height="500" fill="url(#felt)"/>
+
+  <!-- Subtle table arc -->
+  <ellipse cx="400" cy="520" rx="380" ry="180" fill="none" stroke="#2a7a3a" stroke-width="3" opacity="0.5"/>
+  <ellipse cx="400" cy="520" rx="360" ry="170" fill="none" stroke="#1a5a2a" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Sparkle particles -->
+  <circle cx="120" cy="80" r="2" fill="#FFD700" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.2;0.7" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="680" cy="120" r="1.5" fill="#FFD700" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="350" cy="60" r="1.5" fill="#ffffff" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="600" cy="400" r="2" fill="#FFD700" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.15;0.6" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Card 1: Ace of Spades (slightly rotated left) -->
+  <g transform="translate(240, 120) rotate(-12, 60, 85)">
+    <rect x="0" y="0" width="120" height="170" rx="10" fill="url(#cardFace)" stroke="#ccc" stroke-width="1"/>
+    <text x="12" y="30" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#111">A</text>
+    <text x="12" y="52" font-family="Georgia, serif" font-size="18" fill="#111">&#9824;</text>
+    <!-- Large center spade -->
+    <text x="60" y="110" font-family="Georgia, serif" font-size="56" fill="#111" text-anchor="middle">&#9824;</text>
+    <text x="108" y="162" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#111" text-anchor="end" transform="rotate(180, 108, 152)">A</text>
+  </g>
+
+  <!-- Card 2: King of Hearts (slightly rotated right) -->
+  <g transform="translate(340, 100) rotate(8, 60, 85)">
+    <rect x="0" y="0" width="120" height="170" rx="10" fill="url(#cardFace)" stroke="#ccc" stroke-width="1"/>
+    <text x="12" y="30" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#cc0000">K</text>
+    <text x="12" y="52" font-family="Georgia, serif" font-size="18" fill="#cc0000">&#9829;</text>
+    <!-- Crown for King -->
+    <g transform="translate(60, 85)">
+      <polygon points="0,-22 -18,5 -12,-8 -6,5 0,-15 6,5 12,-8 18,5" fill="#cc0000" stroke="#990000" stroke-width="0.5"/>
+      <text y="18" font-family="Georgia, serif" font-size="28" fill="#cc0000" text-anchor="middle">&#9829;</text>
+    </g>
+    <text x="108" y="162" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#cc0000" text-anchor="end" transform="rotate(180, 108, 152)">K</text>
+  </g>
+
+  <!-- Hidden card (face down, peeking) -->
+  <g transform="translate(440, 135) rotate(15, 55, 77)">
+    <rect x="0" y="0" width="110" height="155" rx="9" fill="#1a3a8a" stroke="#0f2266" stroke-width="1.5"/>
+    <!-- Card back pattern -->
+    <rect x="8" y="8" width="94" height="139" rx="5" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.4"/>
+    <line x1="55" y1="20" x2="55" y2="135" stroke="#FFD700" stroke-width="0.5" opacity="0.3"/>
+    <line x1="20" y1="77" x2="90" y2="77" stroke="#FFD700" stroke-width="0.5" opacity="0.3"/>
+    <circle cx="55" cy="77" r="20" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.35"/>
+    <text x="55" y="84" font-family="Georgia, serif" font-size="18" fill="#FFD700" text-anchor="middle" opacity="0.5">AI</text>
+  </g>
+
+  <!-- "21" with glow -->
+  <g filter="url(#goldGlow)">
+    <text x="400" y="380" font-family="Georgia, serif" font-size="72" font-weight="bold" fill="url(#goldShine)" text-anchor="middle" letter-spacing="4">21</text>
+  </g>
+
+  <!-- Chip stack left -->
+  <g transform="translate(130, 300)">
+    <ellipse cx="0" cy="12" rx="28" ry="10" fill="#8B0000" opacity="0.4"/>
+    <ellipse cx="0" cy="6" rx="28" ry="10" fill="url(#chipRed)" stroke="#ffaaaa" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="28" ry="10" fill="url(#chipGold)" stroke="#fff8dc" stroke-width="1.5"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#8B4513" text-anchor="middle">100</text>
+  </g>
+
+  <!-- Chip stack right -->
+  <g transform="translate(650, 280)">
+    <ellipse cx="0" cy="18" rx="28" ry="10" fill="#8B0000" opacity="0.3"/>
+    <ellipse cx="0" cy="12" rx="28" ry="10" fill="url(#chipRed)" stroke="#ffaaaa" stroke-width="1.5"/>
+    <ellipse cx="0" cy="6" rx="28" ry="10" fill="url(#chipRed)" stroke="#ffaaaa" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="28" ry="10" fill="url(#chipGold)" stroke="#fff8dc" stroke-width="1.5"/>
+    <text x="0" y="5" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#8B4513" text-anchor="middle">500</text>
+  </g>
+
+  <!-- AI brain circuit accent -->
+  <g transform="translate(620, 80)" opacity="0.35">
+    <circle cx="0" cy="0" r="3" fill="#00ffaa"/>
+    <line x1="3" y1="0" x2="20" y2="0" stroke="#00ffaa" stroke-width="1"/>
+    <circle cx="20" cy="0" r="2" fill="#00ffaa"/>
+    <line x1="20" y1="2" x2="20" y2="18" stroke="#00ffaa" stroke-width="1"/>
+    <circle cx="20" cy="18" r="2" fill="#00ffaa"/>
+    <line x1="0" y1="3" x2="0" y2="22" stroke="#00ffaa" stroke-width="1"/>
+    <circle cx="0" cy="22" r="3" fill="#00ffaa"/>
+    <line x1="3" y1="22" x2="18" y2="18" stroke="#00ffaa" stroke-width="1"/>
+    <circle cx="30" cy="10" r="2" fill="#00ffaa"/>
+    <line x1="22" y1="0" x2="30" y2="10" stroke="#00ffaa" stroke-width="1"/>
+  </g>
+
+  <!-- Second circuit accent -->
+  <g transform="translate(140, 140)" opacity="0.25">
+    <circle cx="0" cy="0" r="2.5" fill="#00ffaa"/>
+    <line x1="2.5" y1="0" x2="16" y2="-10" stroke="#00ffaa" stroke-width="1"/>
+    <circle cx="16" cy="-10" r="2" fill="#00ffaa"/>
+    <line x1="0" y1="2.5" x2="-12" y2="15" stroke="#00ffaa" stroke-width="1"/>
+    <circle cx="-12" cy="15" r="2" fill="#00ffaa"/>
+  </g>
+
+  <!-- Subtle "HIT" "STAND" labels -->
+  <g opacity="0.2">
+    <text x="200" y="450" font-family="Arial, sans-serif" font-size="14" fill="#88cc88" text-anchor="middle" letter-spacing="3">HIT</text>
+    <text x="600" y="450" font-family="Arial, sans-serif" font-size="14" fill="#88cc88" text-anchor="middle" letter-spacing="3">STAND</text>
+  </g>
+</svg>

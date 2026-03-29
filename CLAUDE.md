@@ -15,3 +15,5 @@ red.ht/speed-showdown - vLLM Speed performance racing for optimized deployments
 red.ht/dev-red-rag - an always up-to-date RAG for developers.redhat.com
 
 red.ht/mm-chat - MultiModal chatbot to easily compare side by side models
+
+red.ht/black-jack - become with poker king with AI assisted Blackjack
