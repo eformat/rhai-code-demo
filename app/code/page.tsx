@@ -18,7 +18,7 @@ const repos: Repo[] = [
     name: "voice-agents",
     description: "Pizza Palace Voice Agent — order a pizza with your voice, powered by AI",
     shortUrl: "red.ht/pizza",
-    github: "https://github.com/eformat/voice-agents",
+    github: "https://github.com/rhai-code/voice-agents",
     accentColor: "#FFD700",
   },
   {
@@ -86,11 +86,11 @@ const repos: Repo[] = [
     accentColor: "#FF3366",
   },
   {
-    id: "wordbeez",
-    name: "wordbeez-docker",
+    id: "wordswarm",
+    name: "wordswarm",
     description: "Word Swarm — can you beat the AI Agent at this buzzingly fun word game?",
     shortUrl: "red.ht/wordswarm",
-    github: "https://github.com/eformat/wordbeez-docker",
+    github: "https://github.com/rhai-code/wordswarm",
     accentColor: "#FFD700",
   },
 ];
